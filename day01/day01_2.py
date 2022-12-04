@@ -10,5 +10,5 @@ for line in fileinput.input():
         calories.append(counter)
         counter = 0
 
-print(max(calories))
-print(sum(sorted(calories, reverse=True)[:3]))
+calories.sort(reverse=True)
+print(sum(calories[:3]))
